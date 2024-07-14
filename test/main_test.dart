@@ -9,13 +9,8 @@ void main() {
       (WidgetTester tester) async {
     await tester.pumpWidget(const ProviderScope(child: StoriesApp()));
 
-    // Verify the AppBar is present
     expect(find.byType(AppBar), findsOneWidget);
-
-    // Verify the app title is displayed
     expect(find.text('Instagram Stories Clone'), findsOneWidget);
-
-    // Verify the StoryList widget is present in the widget tree
     expect(find.byType(StoryList), findsOneWidget);
   });
 }

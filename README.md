@@ -10,6 +10,9 @@
 - Riverpod is used for state management.
 
 ## Screenshots
+![img](assets/images/ss1.png)
+![img](assets/images/ss2.png)
+![img](assets/images/demo.gif)
 
 ## Getting Started
 

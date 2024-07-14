@@ -37,6 +37,6 @@ class TimerController extends StateNotifier<TimerState> {
 }
 
 final timerProvider =
-    StateNotifierProvider.family<TimerController, TimerState, void Function()>(
+    StateNotifierProvider.family.autoDispose<TimerController, TimerState, void Function()>(
   (ref, onTimerComplete) => TimerController(onTimerComplete: onTimerComplete),
 );
